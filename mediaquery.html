@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Media Query Practice</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg">
+  </head>
+
+  <body>
+    <nav id="mainNav">
+      <ul>
+          <a href="https://google.com"><li class="nav_links">Contact Us</li>
+          <a href="https://yahoo.com"><li class="nav_links">How it Started</li>
+          <a href="https://bing.com"><li class="<nav_links">Free Resources</li>
+          <a href="https://youtube.com"><li class="nav_links">Not Free Resources</li>
+      </ul>
+    </nav>
+
+
+    <style>
+
+
+/* Style of nav links and letters (Pay attention to ul, a, li and there effects.)*/
+#mainNav ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+#mainNav a{
+  color:purple;
+}
+
+#mainNav ul li:hover{
+  background-color:yellow;
+}
+
+#mainNav ul a:hover{
+  color:red;
+  transition:2s;
+}
+
+#mainNav ul li{
+  border:solid 2px;
+  border-radius: 3px;
+  display:inline;
+  margin:10px;
+  padding:5px;
+}
+
+/* Media query */
+@media (min-width: 200px) and (max-width: 600px) {
+  #mainNav ul li{
+    display: block;
+    background-color: teal;
+  }
+
+}
+
+
+    </style>
+  </body>
+
+</html>
